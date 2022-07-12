@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment2</title>
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-6">
+                    <div class="card mt-3 bg-danger">
+                        <div class="card-header">
+                            <h4 class="text-center text-light">Arithmetic Code</h4>
+                        </div>
+                        <div class="card-body">
+                                <form action="#">
+                                        <label for="Number One">Number One</label><br>
+                                        <input class="form-control" id="number1" type="text" placeholder=""><br><br>
+                                
+                                        <label for="Number Two">Number Two</label><br>
+                                        <input class="form-control" id="number2" type="text" placeholder=""><br>
+                                        <input class="form-control" id="number3" type="text"  disabled><br>
+                                        
+                                        <button class="btn btn-success" type="button" onclick="arithmeticM()">Solve Multiply</button>
+                                        <button class="btn btn-success" type="button" onclick="arithmeticD()">Solve Division</button>
+                                        <button class="btn btn-success" type="button" onclick="arithmeticA()">Solve Addition</button> <br><br>
+                                        <button class="btn btn-success" type="button" onclick="arithmeticS()">Solve Subtraction</button>
+                                    </form>
+            
+                                    <script>
+                                            function arithmeticM(){
+                                                input1 = document.getElementById('number1').value;
+                                                input2 = document.getElementById('number2').value;
+                                                // input3 = document.getElementById('number3').value;
+                                                var x = Number(input1) 
+                                                var y = Number(input2)
+                                                answer = x * y
+                                                document.getElementById('number3').value = answer;
+                                                                }
+                                                function arithmeticD(){
+                                                input1 = document.getElementById('number1').value;
+                                                input2 = document.getElementById('number2').value;
+                                                // input3 = document.getElementById('number3').value;
+                                                var x = Number(input1) 
+                                                var y = Number(input2)
+                                                answer = x / y
+                                                document.getElementById('number3').value = answer;
+                                                                }
+                                                function arithmeticA(){
+                                                input1 = document.getElementById('number1').value;
+                                                input2 = document.getElementById('number2').value;
+                                                // input3 = document.getElementById('number3').value;
+                                                var x = Number(input1) 
+                                                var y = Number(input2)
+                                                answer = x + y
+                                                document.getElementById('number3').value = answer;
+                                                                }
+                                                function arithmeticS(){
+                                                input1 = document.getElementById('number1').value;
+                                                input2 = document.getElementById('number2').value;
+                                                // input3 = document.getElementById('number3').value;
+                                                var x = Number(input1) 
+                                                var y = Number(input2)
+                                                answer = x - y
+                                                document.getElementById('number3').value = answer;
+                                                                }
+                                    </script>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
